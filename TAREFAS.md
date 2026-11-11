@@ -7,25 +7,25 @@ Marque `[x]` quando terminar cada item. Uma tarefa por vez, sem pular.
 ## Fase 1: API sem banco de dados
 
 ### A FAZER
-- [ ] **1. Desligar o banco no `pom.xml`**
+- [X] **1. Desligar o banco no `pom.xml`**
   - Comentar `spring-boot-starter-data-jpa`, `spring-boot-starter-flyway`, `flyway-database-postgresql` e `postgresql`.
   - Recarregar o Maven no IntelliJ.
   - ✅ Pronto quando: a aplicação roda e aparece `Started WalletEmuApplication`.
 
-- [ ] **2. Primeiro endpoint: `GET /hello`**
+- [X] **2. Primeiro endpoint: `GET /hello`**
   - Criar a classe `HelloController` com `@RestController` e `@GetMapping`.
   - ✅ Pronto quando: `http://localhost:8080/hello` mostra um texto no navegador.
 
-- [ ] **3. Organizar em pacotes**
+- [X] **3. Organizar em pacotes**
   - Criar o pacote `com.walletemu.hello` e mover o `HelloController` para ele.
   - ✅ Pronto quando: a aplicação continua funcionando depois da mudança.
 
-- [ ] **4. Criar o DTO de saída: `HelloResponse`**
+- [X] **4. Criar o DTO de saída: `HelloResponse`**
   - Um `record` com `id` (UUID) e `nome` (String).
   - Fazer o `GET /hello` devolver um `HelloResponse` em vez de texto.
   - ✅ Pronto quando: o navegador mostra um JSON `{"id": "...", "nome": "..."}`.
 
-- [ ] **5. Criar o DTO de entrada: `HelloRequest`**
+- [X] **5. Criar o DTO de entrada: `HelloRequest`**
   - Um `record` com o campo `nome`.
   - ✅ Pronto quando: o projeto compila sem erro.
 
